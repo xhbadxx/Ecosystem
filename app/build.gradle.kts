@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.felix.projects.ecosystem"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.felix.projects.ecosystem"
@@ -14,7 +14,7 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
-
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -39,4 +39,5 @@ dependencies {
 
     implementation(libs.core.ktx)
     implementation(libs.leanback)
+    implementation(libs.multidex)
 }

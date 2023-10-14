@@ -3,9 +3,21 @@
 
     <application
         android:allowBackup="true"
+        android:banner="@mipmap/ic_launcher"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Ecosystem" />
+        android:name=".MainApplication"
+        android:theme="@style/Theme.Ecosystem">
+
+        <activity
+            android:name="com.felix.projects.ecosystem.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
