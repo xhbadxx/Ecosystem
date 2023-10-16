@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ecosystem"
 include(":app")
- 
+include(":common:ui:tv")

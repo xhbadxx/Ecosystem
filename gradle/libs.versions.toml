@@ -1,18 +1,43 @@
 [versions]
 agp = "8.1.0"
-org-jetbrains-kotlin-android = "1.8.0"
+org-jetbrains-kotlin-android = "1.9.10"
 core-ktx = "1.12.0"
 leanback = "1.0.0"
 multidex = "2.0.1"
+#
+compose = "2023.10.00"
+compose-activity = "1.8.0"
+compose-tv = "1.0.0-alpha10"
+org-jetbrains-kotlin-jvm = "1.8.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.9.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 leanback = { group = "androidx.leanback", name = "leanback", version.ref = "leanback" }
 multidex = { group = "androidx.multidex", name = "multidex", version.ref = "multidex"}
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+# Compose Layers
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose"}
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+# Compose Activity
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity"}
+# Compose Tv
+compose-tv-foundation = { group = "androidx.tv", name = "tv-foundation", version.ref = "compose-tv"}
+compose-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "compose-tv"}
+
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
 
 [bundles]
-
